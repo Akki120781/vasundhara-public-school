@@ -80,11 +80,11 @@ export const NoticeBannerModal: React.FC<NoticeBannerModalProps> = ({
         </div>
 
         {/* Poster Image preview */}
-        <div style={{ height: "200px", overflow: "hidden", position: "relative" }}>
+        <div style={{ height: "220px", overflow: "hidden", position: "relative" }}>
           <img
             src="https://images.jdmagicbox.com/v2/comp/dewas/y1/9999p7272.7272.170608153633.m2y1/catalogue/vasundhara-public-school-punjapura-dewas-schools-qpblpvjpd5.jpg"
             alt="Vasundhara Public School Campus"
-            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 38%" }}
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 56.5%" }}
           />
           <div
             style={{

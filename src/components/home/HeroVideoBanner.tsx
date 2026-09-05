@@ -10,6 +10,7 @@ export const HeroVideoBanner: React.FC = () => {
           src="https://images.jdmagicbox.com/v2/comp/dewas/y1/9999p7272.7272.170608153633.m2y1/catalogue/vasundhara-public-school-punjapura-dewas-schools-qpblpvjpd5.jpg"
           alt="Vasundhara Public School Campus - Punjapura, Dewas"
           className="hero-campus-image"
+          style={{ objectPosition: "center 56.5%" }}
           loading="eager"
         />
         {/* Subtle Bottom Gradient for seamless integration with highlight cards */}

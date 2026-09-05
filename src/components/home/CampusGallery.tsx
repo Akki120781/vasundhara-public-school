@@ -90,7 +90,12 @@ export const CampusGallery: React.FC<CampusGalleryProps> = ({ onImageClick }) =>
                   className="gallery-slide-item"
                   onClick={() => onImageClick && onImageClick(img)}
                 >
-                  <img src={img.src} alt={img.title} loading="lazy" />
+                  <img
+                    src={img.src}
+                    alt={img.title}
+                    loading="lazy"
+                    style={img.id === "g1" ? { objectPosition: "center 56.5%" } : undefined}
+                  />
                   <div className="gallery-slide-caption">
                     <span>{img.title}</span>
                   </div>
