@@ -703,9 +703,12 @@ button, input, select, textarea {
 
 .programmes-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
   text-align: center;
+  justify-content: center;
 }
 
 .program-card {
@@ -1780,8 +1783,8 @@ button, input, select, textarea {
    ========================================================================== */
 @media (max-width: 1024px) {
   .programmes-grid {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
   }
 
   .news-messages-grid {
@@ -1824,6 +1827,12 @@ button, input, select, textarea {
 
   .hero-banner {
     height: 380px;
+  }
+
+  .programmes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 520px;
   }
 
   .explore-feed-list-item {
