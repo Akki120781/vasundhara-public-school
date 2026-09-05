@@ -45,7 +45,7 @@ npm run preview
 ### Option 1: Automatic Deployment via Git & Vercel Dashboard (Recommended)
 1. Push this repository to your GitHub account:
    ```bash
-   git remote add origin https://github.com/<your-username>/vasundhara-public-school.git
+   git remote add origin https://github.com/akki120781/vasundhara-public-school.git
    git branch -M main
    git push -u origin main
    ```
