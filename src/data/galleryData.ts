@@ -46,7 +46,7 @@ export const galleryImages: GalleryImage[] = [
     id: "g7",
     title: "Outdoor Sports & Physical Education Ground",
     category: "Sports",
-    src: "https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "g8",
