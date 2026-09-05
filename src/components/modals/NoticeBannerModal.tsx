@@ -75,7 +75,7 @@ export const NoticeBannerModal: React.FC<NoticeBannerModalProps> = ({
             Vasundhara Public School
           </h2>
           <p style={{ color: "#d1fae5", fontSize: "0.95rem", marginTop: "6px" }}>
-            Premier Co-Ed Campus &bull; Punjapura, Dewas (UDISE: 23230413310)
+            Premier Co-Ed Campus (Pre-Nursery to Class X) &bull; Punjapura, Dewas (UDISE: 23230413310)
           </p>
         </div>
 

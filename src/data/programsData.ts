@@ -50,14 +50,4 @@ export const schoolPrograms: SchoolProgram[] = [
     description: "Comprehensive board examination syllabus preparation, practical lab work, and disciplined mentoring.",
     link: "#admission",
   },
-  {
-    id: "higher-secondary",
-    name: "Higher Secondary",
-    subtitle: "(Classes XI & XII)",
-    ageGroup: "16-17 years",
-    iconBg: "#f3e5f5",
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=400&q=80",
-    description: "Specialized academic streams (Science, Commerce, Arts) preparing students for competitive success.",
-    link: "#admission",
-  },
 ];

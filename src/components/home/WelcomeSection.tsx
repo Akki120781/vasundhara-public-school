@@ -17,12 +17,12 @@ export const WelcomeSection: React.FC = () => {
             infrastructure spanning 28 modern classrooms, an enriched library, expansive
             sports grounds, and a dedicated fleet of 3 school transport buses, we provide a safe,
             inspiring, and future-ready learning environment. Guided by 24 experienced and
-            passionate teachers, we empower over 670 students across Kindergarten, Primary,
-            Middle, Secondary, and Higher Secondary levels to achieve excellence in education and life.
+            passionate teachers, we empower over 670 students across Pre-Primary, Primary,
+            Middle, and Secondary levels (Pre-Nursery to Class X) to achieve excellence in education and life.
           </p>
         </div>
 
-        {/* 5 Circular Educational Levels Banner */}
+        {/* 4 Core Educational Levels Banner */}
         <ProgramsShowcase />
 
         {/* Animated Numerical Key Stats */}

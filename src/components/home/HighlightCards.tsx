@@ -16,7 +16,7 @@ export const HighlightCards: React.FC = () => {
               <div className="connected-text-wrap">
                 <h3 className="connected-card-title">School Calendar</h3>
                 <p className="connected-card-desc">
-                  Academic Calendar 2025-26 (Nursery to Class XII) &bull; Term Assessment &amp; Vacation Timetables
+                  Academic Calendar 2025-26 (Pre-Nursery to Class X) &bull; Term Assessment &amp; Vacation Timetables
                 </p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export const HighlightCards: React.FC = () => {
               <div className="connected-text-wrap">
                 <h3 className="connected-card-title">Notifications / Circulars</h3>
                 <p className="connected-card-desc">
-                  Admissions Open 2025-26 (Nursery to Class XII), school bus transport route guidelines &amp; notices.
+                  Admissions Open 2025-26 (Pre-Nursery to Class X), school bus transport route guidelines &amp; notices.
                 </p>
               </div>
             </div>

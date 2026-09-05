@@ -34,7 +34,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnquiry }) => {
                 <a href="#facilities">Science &amp; Computer Practical Learning</a>
               </li>
               <li>
-                <a href="#facilities">Co-Educational (Kindergarten to Class XII)</a>
+                <a href="#facilities">Co-Educational (Kindergarten to Class 10)</a>
               </li>
               <li>
                 <a
@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnquiry }) => {
                 </a>
               </li>
               <li>
-                <a href="#programs">Educational Wings (Nursery to 12th)</a>
+                <a href="#programs">Educational Wings (Pre-Nursery to Class 10)</a>
               </li>
               <li>
                 <a href="#gallery">Campus Photo Gallery</a>

@@ -140,11 +140,10 @@ export const AdmissionModal: React.FC<AdmissionModalProps> = ({
                       setFormData({ ...formData, grade: e.target.value })
                     }
                   >
-                    <option value="Kindergarten">Kindergarten (Nursery / KG)</option>
-                    <option value="Primary (1-5)">Classes I to V (Primary)</option>
+                    <option value="Kindergarten">Kindergarten (Nursery / LKG / UKG)</option>
+                    <option value="Primary (1-5)">Classes I to V (Primary Wing)</option>
                     <option value="Middle (6-8)">Classes VI to VIII (Upper Primary)</option>
-                    <option value="Secondary (9-10)">Classes IX &amp; X (Secondary)</option>
-                    <option value="Higher Secondary (11-12)">Classes XI &amp; XII (Higher Secondary)</option>
+                    <option value="Secondary (9-10)">Classes IX &amp; X (Secondary / Board Prep)</option>
                   </select>
                 </div>
 

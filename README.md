@@ -3,7 +3,7 @@
 Official modern web application for **Vasundhara Public School**, located in Punjapura, Tehsil Bagli, District Dewas (M.P.) - 455227.
 
 - **UDISE Code**: `23230413310`
-- **Institution Type**: Co-Educational (Kindergarten to Higher Secondary Class XII)
+- **Institution Type**: Co-Educational Secondary School (Pre-Nursery to Class X)
 - **Classrooms**: 28 Modern & Spacious Classrooms
 - **Faculty**: 24+ Experienced Educators
 - **Student Strength**: 670+ Enrolled Students
@@ -69,7 +69,7 @@ Follow the interactive prompts to log in and deploy within seconds.
 - **Campus Hero Banner**: Real facade photography of Vasundhara Public School Punjapura campus.
 - **Connected Flush Highlights**: 4 connected cards showcasing Calendar, Events, News, and Notifications.
 - **Interactive Modals**:
-  - Admission Enquiry Form (with class selection from Nursery to Class XII and transport requirements)
+  - Admission Enquiry Form (with class selection from Pre-Nursery to Class X and transport requirements)
   - Timed Announcement Poster Modal with authentic campus highlights
   - Global Search Modal with real-time filtering across school wings and services
   - High-res Lightbox for Campus Gallery & Social Milestones
