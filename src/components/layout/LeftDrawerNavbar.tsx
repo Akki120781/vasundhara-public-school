@@ -86,7 +86,7 @@ export const LeftDrawerNavbar: React.FC<LeftDrawerNavbarProps> = ({
               </div>
               <div className="school-branding-text">
                 <h1 className="header-school-name">Vasundhara Public School</h1>
-                <p className="header-school-affiliation">CBSE &amp; MP Board Co-Ed School &bull; Punjapura, Dewas (UDISE: 23230413310)</p>
+                <p className="header-school-affiliation">M.P. Board Recognized Co-Ed School &bull; Punjapura, Dewas (UDISE: 23230413310)</p>
               </div>
             </a>
           </div>

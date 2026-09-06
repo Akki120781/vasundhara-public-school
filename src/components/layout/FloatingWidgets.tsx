@@ -25,7 +25,7 @@ export const FloatingWidgets: React.FC<FloatingWidgetsProps> = ({
 
       {/* Floating Official WhatsApp Quick Connect Button */}
       <a
-        href="https://api.whatsapp.com/send?phone=917389910700&text=Hello%20Mount%20Index%20Team%2C%20I%20would%20like%20to%20enquire%20about%20admissions."
+        href="https://api.whatsapp.com/send?phone=919425012345&text=Hello%20Vasundhara%20Public%20School%20Team%2C%20I%20would%20like%20to%20enquire%20about%20admissions."
         target="_blank"
         rel="noreferrer"
         className="floating-whatsapp-btn"

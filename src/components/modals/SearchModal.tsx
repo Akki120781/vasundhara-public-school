@@ -20,7 +20,7 @@ const searchDatabase: SearchResult[] = [
   { title: "Scholarship Test 2025-26 Announcements", category: "Academics", link: "#scholarship" },
   { title: "Wushu & Martial Arts World Class Arena", category: "Sports", link: "#sports" },
   { title: "Chairman Shri Suresh Singh Bhadoria's Message", category: "About Us", link: "#messages" },
-  { title: "Mandatory Public Disclosure 2026-27 (CBSE)", category: "Compliance", link: "#disclosure" },
+  { title: "Mandatory Public Disclosure 2026-27 (M.P. Board)", category: "Compliance", link: "#disclosure" },
   { title: "Transfer Certificate (TC) Verification", category: "Academics", link: "#tc" },
   { title: "School Uniform & Book List", category: "Academics", link: "#uniform" },
 ];

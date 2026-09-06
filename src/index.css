@@ -1656,13 +1656,16 @@ button, input, select, textarea {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   animation: fadeIn 0.2s ease;
 }
 
@@ -1674,7 +1677,116 @@ button, input, select, textarea {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
+  margin: auto;
   animation: zoomIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   ADMISSION BROCHURE POPUP (FLYER BANNER MODAL)
+   ========================================================================== */
+.brochure-modal-backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.brochure-modal-card {
+  position: relative;
+  background: #ffffff;
+  padding: 7px;
+  border-radius: 10px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.2);
+  width: auto;
+  max-width: min(92vw, 440px);
+  max-height: min(90dvh, 760px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: zoomIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.brochure-image-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.brochure-graphic-img {
+  width: 100%;
+  height: auto;
+  max-height: calc(min(90dvh, 760px) - 14px);
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.brochure-image-holder:hover .brochure-graphic-img {
+  transform: scale(1.01);
+}
+
+/* Primary Top-Right Floating Close Button */
+.brochure-close-btn {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #0f172a;
+  color: #0f172a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 60;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.brochure-close-btn:hover {
+  background: #f1f5f9;
+  transform: scale(1.1);
+}
+
+/* Clean Bottom Dismiss Strip */
+.brochure-modal-bottom-strip {
+  width: 100%;
+  padding-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brochure-bottom-dismiss-btn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 14px;
+  border-radius: 20px;
+  transition: all var(--transition-fast);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.brochure-bottom-dismiss-btn:hover {
+  color: #0f172a;
+  background: #f1f5f9;
 }
 
 .modal-header {
@@ -1879,3 +1991,122 @@ button, input, select, textarea {
     text-align: center;
   }
 }
+
+/* ==========================================================================
+   MOBILE RESPONSIVE ENHANCEMENTS & ELEMENT AUTOSIZING (MOUNT INDEX ALIGNED)
+   ========================================================================== */
+@media (max-width: 640px) {
+  /* Brochure Popup Mobile Autosizing & Prominent Close Buttons */
+  .brochure-modal-backdrop {
+    padding: 10px;
+    align-items: center;
+  }
+
+  .brochure-modal-card {
+    max-width: min(94vw, 420px);
+    max-height: calc(100dvh - 24px);
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  .brochure-graphic-img {
+    max-height: calc(100dvh - 36px);
+  }
+
+  /* Pinned top-right close button inside card on mobile */
+  .brochure-close-btn {
+    top: -10px;
+    right: -10px;
+    width: 34px;
+    height: 34px;
+    background: #ffffff;
+    color: #0f172a;
+    border: 2px solid #0f172a;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  }
+
+  .brochure-bottom-dismiss-btn {
+    font-size: 0.76rem;
+    padding: 3px 10px;
+  }
+
+  /* Hero Banner Aspect Ratio on Phone */
+  .hero-banner {
+    height: clamp(230px, 56vw, 320px);
+  }
+
+  .hero-campus-tag {
+    bottom: 12px;
+    right: 12px;
+    gap: 6px;
+  }
+
+  .campus-tag-pill {
+    padding: 4px 10px;
+    font-size: 0.72rem;
+  }
+
+  /* 4 Highlight Feature Cards Compact Sizing on Phone */
+  .connected-feature-card {
+    padding: 14px 18px;
+  }
+
+  .connected-card-inner {
+    gap: 14px;
+  }
+
+  .connected-icon-wrap {
+    width: 44px;
+    height: 44px;
+  }
+
+  .connected-card-title {
+    font-size: 1.08rem;
+  }
+
+  .connected-card-desc {
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+
+  /* Floating Widgets: WhatsApp & Side Admission Tab */
+  .floating-enquiry-btn {
+    padding: 8px 12px;
+    font-size: 0.78rem;
+    gap: 5px;
+  }
+
+  .floating-whatsapp-btn {
+    bottom: 22px;
+    right: 18px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header-normal-inner {
+    padding: 8px 12px;
+  }
+
+  .school-logo-badge svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-school-name {
+    font-size: 1.05rem;
+    line-height: 1.15;
+  }
+
+  .header-school-affiliation {
+    font-size: 0.65rem;
+    line-height: 1.2;
+  }
+
+  .programmes-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+

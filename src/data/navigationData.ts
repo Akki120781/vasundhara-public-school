@@ -36,7 +36,7 @@ export const navigationItems: NavItem[] = [
       { title: "Primary Wing (Classes I to V)", href: "#programs" },
       { title: "Upper Primary / Middle (Classes VI to VIII)", href: "#programs" },
       { title: "Secondary School (Classes IX & X - Board Prep)", href: "#programs" },
-      { title: "Curriculum & Syllabus (CBSE & State Board)", href: "#programs" },
+      { title: "Curriculum & Syllabus (M.P. Board)", href: "#programs" },
       { title: "Academic Results & Achievements", href: "#news" },
       { title: "Dedicated Faculty & Staff", href: "#messages" },
     ],
