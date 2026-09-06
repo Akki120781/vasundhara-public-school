@@ -5,8 +5,55 @@
   <title>Vasundhara Public School Admission Banner</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
   <style>
+    /* User-specified typography with exact names as primary and high-fidelity fallbacks */
+    @font-face {
+      font-family: 'HS Gold Bold';
+      src: local('HS Gold Bold'), local('HSGold-Bold'), local('HS Gold');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'HS Gold';
+      src: local('HS Gold Bold'), local('HSGold-Bold'), local('HS Gold');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Alfons Sans Bold';
+      src: local('Alfons Sans Bold'), local('AlfonsSans-Bold'), local('Alfons Sans');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Alfons Sans';
+      src: local('Alfons Sans Bold'), local('AlfonsSans-Bold'), local('Alfons Sans');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'AC Texto ExtraBold';
+      src: local('AC Texto ExtraBold'), local('ACTexto-ExtraBold'), local('AC Texto');
+      font-weight: 800;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'AC Texto';
+      src: local('AC Texto ExtraBold'), local('ACTexto-ExtraBold'), local('AC Texto');
+      font-weight: 800;
+      font-style: normal;
+    }
+
+    :root {
+      --font-ac-texto: 'AC Texto ExtraBold', 'AC Texto', 'Albert Sans', 'Montserrat', sans-serif;
+      --font-hs-gold: 'HS Gold Bold', 'HS Gold', 'Outfit', 'Montserrat', sans-serif;
+      --font-alfons-sans: 'Alfons Sans Bold', 'Alfons Sans', 'Albert Sans', 'Plus Jakarta Sans', sans-serif;
+      --brand-red: #cc141f;
+      --brand-navy: #1e3a5f;
+      --text-black: #000000;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -19,14 +66,14 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: var(--font-alfons-sans);
     }
 
     #banner-poster {
       width: 820px;
       height: 1024px;
       position: relative;
-      background: linear-gradient(180deg, #74b7e8 0%, #a4d2f3 22%, #d2ecfd 42%, #eef7fe 60%, #ffffff 82%);
+      background: linear-gradient(180deg, #78bae8 0%, #a4d2f3 22%, #d2ecfd 42%, #eef7fe 60%, #ffffff 82%);
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -35,13 +82,13 @@
     /* Soft Realistic Clouds in the Sky */
     .cloud {
       position: absolute;
-      background: rgba(255, 255, 255, 0.65);
+      background: rgba(255, 255, 255, 0.7);
       border-radius: 50%;
-      filter: blur(30px);
+      filter: blur(28px);
       pointer-events: none;
     }
 
-    /* Top Strip (Tiny, clean, exactly like Mount Index) */
+    /* Top Strip (Matches Mount Index cleanly) */
     .top-strip {
       display: flex;
       justify-content: space-between;
@@ -51,19 +98,21 @@
       z-index: 10;
     }
     .top-strip .url {
-      font-size: 13px;
-      font-weight: 500;
+      font-family: var(--font-alfons-sans);
+      font-size: 13.5px;
+      font-weight: 700;
       color: #1e293b;
       letter-spacing: 0.2px;
     }
     .top-strip .board {
-      font-size: 12.5px;
-      font-weight: 500;
+      font-family: var(--font-alfons-sans);
+      font-size: 13px;
+      font-weight: 700;
       color: #334155;
       letter-spacing: 0.2px;
     }
 
-    /* Branding Lockup: Horizontal Logo on Left + School Name on Right (Exact Mount Index structure) */
+    /* Branding Lockup: Horizontal Logo on Left + School Name on Right */
     .brand-lockup-row {
       display: flex;
       align-items: center;
@@ -78,7 +127,7 @@
       width: 92px;
       height: 92px;
       flex-shrink: 0;
-      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.12));
     }
 
     .brand-name-col {
@@ -88,24 +137,27 @@
       text-align: left;
     }
     .brand-name-top {
+      font-family: var(--font-ac-texto);
       font-size: 22px;
-      font-weight: 700;
-      color: #1e293b;
-      letter-spacing: 3px;
+      font-weight: 800;
+      color: var(--brand-navy);
+      letter-spacing: 2.5px;
       line-height: 1;
       text-transform: uppercase;
     }
     .brand-name-main {
+      font-family: var(--font-ac-texto);
       font-size: 42px;
-      font-weight: 900;
-      color: #d1121d;
+      font-weight: 800;
+      color: var(--brand-red);
       letter-spacing: 1px;
       line-height: 1;
       text-transform: uppercase;
       margin: 2px 0 3px;
     }
     .brand-name-sub {
-      font-size: 16px;
+      font-family: var(--font-alfons-sans);
+      font-size: 15px;
       font-weight: 700;
       color: #1e293b;
       letter-spacing: 2.5px;
@@ -113,15 +165,16 @@
       text-transform: uppercase;
     }
 
-    /* Admissions Open Headline (Clean, bold red, flat print style) */
+    /* Admissions Open Headline (In AC Texto ExtraBold) */
     .admissions-headline {
+      font-family: var(--font-ac-texto);
       text-align: center;
       font-size: 44px;
-      font-weight: 900;
-      color: #d1121d;
+      font-weight: 800;
+      color: var(--brand-red);
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      margin: 14px 0 6px;
+      margin: 12px 0 6px;
       position: relative;
       z-index: 10;
       line-height: 1;
@@ -129,35 +182,38 @@
 
     /* Dotted Line Separator */
     .dotted-rule {
-      border-bottom: 2px dotted #000000;
+      border-bottom: 2px dotted #111827;
       margin: 8px 36px;
-      opacity: 0.75;
+      opacity: 0.85;
       position: relative;
       z-index: 10;
     }
 
-    /* Info Sections: Bold Heading + Regular Weight Body (High Readability) */
+    /* Info Sections */
     .info-section {
       padding: 3px 36px;
       position: relative;
       z-index: 10;
     }
+    /* Eligibility Criteria & Priority Consideration in HS Gold Bold */
     .info-section-title {
+      font-family: var(--font-hs-gold);
       font-size: 17.5px;
-      font-weight: 800;
-      color: #000000;
-      letter-spacing: 0.4px;
+      font-weight: 700;
+      color: var(--text-black);
+      letter-spacing: 0.5px;
       text-transform: uppercase;
       margin-bottom: 4px;
     }
     .info-section-body {
-      font-size: 14px;
-      font-weight: 500;
+      font-family: var(--font-alfons-sans);
+      font-size: 13.5px;
+      font-weight: 600;
       color: #111827;
-      line-height: 1.45;
+      line-height: 1.42;
     }
 
-    /* Middle Floating Badge: Clean Up to 100% Scholarship Ribbon on Right (Airy & Uncluttered) */
+    /* Middle Ribbon Badge: Up to 100% Scholarship on Right */
     .middle-badges-strip {
       display: flex;
       justify-content: flex-end;
@@ -166,7 +222,7 @@
       z-index: 15;
     }
     .scholarship-ribbon-card {
-      background: #cc141f;
+      background: var(--brand-red);
       color: #ffffff;
       border-radius: 4px;
       padding: 9px 24px;
@@ -174,20 +230,22 @@
       text-align: center;
     }
     .scholarship-ribbon-card .sch-heading {
+      font-family: var(--font-ac-texto);
       font-size: 18px;
-      font-weight: 900;
+      font-weight: 800;
       letter-spacing: 0.6px;
       text-transform: uppercase;
       line-height: 1.1;
     }
     .scholarship-ribbon-card .sch-details {
+      font-family: var(--font-alfons-sans);
       font-size: 11.5px;
       font-weight: 600;
       margin-top: 3px;
       color: #fee2e2;
     }
 
-    /* Campus Photo Area (Reduced sky, prominent building, clean grass) */
+    /* Campus Photo Area */
     .campus-photo-container {
       flex: 1;
       position: relative;
@@ -202,7 +260,7 @@
       object-position: center 58%;
       display: block;
     }
-    /* Natural sky blend */
+    /* Soft sky blend */
     .photo-sky-blend {
       position: absolute;
       top: 0;
@@ -213,10 +271,10 @@
       pointer-events: none;
     }
 
-    /* Bottom White Footer Strip (Simplified, clean, zero clutter) */
+    /* Bottom White Footer Strip (In Alfons Sans Bold & AC Texto ExtraBold) */
     .footer-white-strip {
       background: #ffffff;
-      border-top: 2px solid #e2e8f0;
+      border-top: 2px solid #cbd5e1;
       padding: 12px 36px 14px;
       display: flex;
       justify-content: space-between;
@@ -228,20 +286,25 @@
       display: flex;
       flex-direction: column;
       gap: 2px;
-      max-width: 440px;
+      max-width: 470px;
     }
+    /* Campus address in Alfons Sans Bold */
     .campus-address-line {
+      font-family: var(--font-alfons-sans);
       font-size: 12.5px;
-      font-weight: 800;
-      color: #000000;
+      font-weight: 700;
+      color: var(--text-black);
       letter-spacing: 0.2px;
-      line-height: 1.3;
+      line-height: 1.35;
+      text-transform: uppercase;
     }
+    /* Email in Alfons Sans Bold */
     .campus-email-line {
-      font-size: 12px;
-      font-weight: 500;
+      font-family: var(--font-alfons-sans);
+      font-size: 12.5px;
+      font-weight: 700;
       color: #1e293b;
-      margin-top: 1px;
+      margin-top: 2px;
     }
 
     .footer-contact-call {
@@ -251,17 +314,21 @@
       align-items: flex-end;
       white-space: nowrap;
     }
+    /* For More Details Call in Alfons Sans Bold */
     .call-label-text {
-      font-size: 12px;
-      font-weight: 800;
-      color: #000000;
+      font-family: var(--font-alfons-sans);
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-black);
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
+    /* Phone numbers in AC Texto ExtraBold */
     .call-numbers-text {
+      font-family: var(--font-ac-texto);
       font-size: 21px;
-      font-weight: 900;
-      color: #cc141f;
+      font-weight: 800;
+      color: var(--brand-red);
       letter-spacing: 0.5px;
       margin-top: 2px;
       white-space: nowrap;
@@ -391,7 +458,8 @@
     <div class="footer-white-strip">
       <div class="footer-campus-info">
         <div class="campus-address-line">
-          SCHOOL CAMPUS : MAIN ROAD, PUNJAPURA, TEHSIL BAGLI, DEWAS (M.P.)
+          SCHOOL CAMPUS : MAIN ROAD, PUNJAPURA, TEHSIL BAGLI,<br>
+          DEWAS (M.P.)
         </div>
         <div class="campus-email-line">
           Email : admissions@vasundharapublic.in
