@@ -5,7 +5,7 @@
   <title>Vasundhara Public School Admission Banner</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -19,175 +19,179 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      font-family: 'Montserrat', 'Outfit', sans-serif;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     #banner-poster {
       width: 820px;
       height: 1024px;
       position: relative;
-      background: linear-gradient(180deg, #cde6f9 0%, #e6f3fd 28%, #f7fbfe 52%, #ffffff 80%);
+      background: linear-gradient(180deg, #74b7e8 0%, #a4d2f3 22%, #d2ecfd 42%, #eef7fe 60%, #ffffff 82%);
       overflow: hidden;
       display: flex;
       flex-direction: column;
     }
 
-    /* Soft Realistic Clouds Texture */
+    /* Soft Realistic Clouds in the Sky */
     .cloud {
       position: absolute;
       background: rgba(255, 255, 255, 0.65);
       border-radius: 50%;
-      filter: blur(28px);
+      filter: blur(30px);
       pointer-events: none;
     }
 
-    /* Top Strip */
+    /* Top Strip (Tiny, clean, exactly like Mount Index) */
     .top-strip {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 42px 6px;
+      padding: 14px 36px 4px;
       position: relative;
       z-index: 10;
     }
     .top-strip .url {
-      font-size: 13.5px;
-      font-weight: 800;
-      color: #0f2744;
-      letter-spacing: 0.4px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #1e293b;
+      letter-spacing: 0.2px;
     }
     .top-strip .board {
-      font-size: 13px;
-      font-weight: 800;
-      color: #1e3a5f;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: #334155;
       letter-spacing: 0.2px;
     }
 
-    /* Centered School Branding */
-    .school-branding-center {
+    /* Branding Lockup: Horizontal Logo on Left + School Name on Right (Exact Mount Index structure) */
+    .brand-lockup-row {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 6px 20px 6px;
+      gap: 16px;
+      padding: 8px 30px 4px;
       position: relative;
       z-index: 10;
-      text-align: center;
     }
 
-    .logo-crest-wrap {
-      width: 82px;
-      height: 82px;
-      margin-bottom: 6px;
-      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.12));
+    .brand-logo-crest {
+      width: 92px;
+      height: 92px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
     }
 
-    .school-title-group {
+    .brand-name-col {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      justify-content: center;
+      text-align: left;
     }
-    .school-title-name {
-      font-size: 38px;
+    .brand-name-top {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1e293b;
+      letter-spacing: 3px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    .brand-name-main {
+      font-size: 42px;
       font-weight: 900;
-      color: #0b4620;
-      letter-spacing: 1.5px;
-      line-height: 1.05;
+      color: #d1121d;
+      letter-spacing: 1px;
+      line-height: 1;
       text-transform: uppercase;
-      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+      margin: 2px 0 3px;
     }
-    .school-subtitle {
-      font-size: 15px;
-      font-weight: 800;
-      color: #cc141f;
-      letter-spacing: 4px;
+    .brand-name-sub {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1e293b;
+      letter-spacing: 2.5px;
+      line-height: 1;
       text-transform: uppercase;
-      margin-top: 3px;
     }
 
-    /* Admissions Open Headline */
+    /* Admissions Open Headline (Clean, bold red, flat print style) */
     .admissions-headline {
       text-align: center;
       font-size: 44px;
       font-weight: 900;
-      color: #cc141f;
-      letter-spacing: 0.8px;
+      color: #d1121d;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
-      margin: 10px 0 6px;
+      margin: 14px 0 6px;
       position: relative;
       z-index: 10;
+      line-height: 1;
     }
 
-    /* Crisp Dotted Line Separator */
+    /* Dotted Line Separator */
     .dotted-rule {
-      border-bottom: 2px dotted #111827;
-      margin: 8px 42px;
-      opacity: 0.85;
+      border-bottom: 2px dotted #000000;
+      margin: 8px 36px;
+      opacity: 0.75;
       position: relative;
       z-index: 10;
     }
 
-    /* Info Blocks (Eligibility & Priority) - High Contrast Black Text */
+    /* Info Sections: Bold Heading + Regular Weight Body (High Readability) */
     .info-section {
-      padding: 3px 42px;
+      padding: 3px 36px;
       position: relative;
       z-index: 10;
     }
     .info-section-title {
-      font-size: 18px;
-      font-weight: 900;
+      font-size: 17.5px;
+      font-weight: 800;
       color: #000000;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.4px;
       text-transform: uppercase;
       margin-bottom: 4px;
     }
     .info-section-body {
-      font-size: 14.5px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 500;
       color: #111827;
       line-height: 1.45;
     }
 
-    /* Prominent Red Scholarship Ribbon (Centered & Clean - No Cluttered Infra Boxes) */
-    .scholarship-bar {
+    /* Middle Floating Badge: Clean Up to 100% Scholarship Ribbon on Right (Airy & Uncluttered) */
+    .middle-badges-strip {
       display: flex;
-      justify-content: center;
-      padding: 10px 42px 4px;
+      justify-content: flex-end;
+      padding: 24px 36px 0;
       position: relative;
       z-index: 15;
     }
-    .scholarship-ribbon {
+    .scholarship-ribbon-card {
       background: #cc141f;
       color: #ffffff;
-      border-radius: 6px;
-      padding: 10px 36px;
-      box-shadow: 0 4px 16px rgba(204, 20, 31, 0.4);
+      border-radius: 4px;
+      padding: 9px 24px;
+      box-shadow: 0 4px 14px rgba(204, 20, 31, 0.35);
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
-    .scholarship-ribbon .sch-main {
-      font-size: 20px;
+    .scholarship-ribbon-card .sch-heading {
+      font-size: 18px;
       font-weight: 900;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.6px;
       text-transform: uppercase;
       line-height: 1.1;
     }
-    .scholarship-ribbon .sch-sub {
-      font-size: 12.5px;
-      font-weight: 700;
+    .scholarship-ribbon-card .sch-details {
+      font-size: 11.5px;
+      font-weight: 600;
       margin-top: 3px;
       color: #fee2e2;
-      letter-spacing: 0.3px;
     }
 
-    /* Campus Photo Area - Reduced sky, centered building & foreground */
+    /* Campus Photo Area (Reduced sky, prominent building, clean grass) */
     .campus-photo-container {
       flex: 1;
       position: relative;
-      margin-top: 2px;
+      margin-top: -16px;
       overflow: hidden;
       z-index: 5;
     }
@@ -195,25 +199,25 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 60%;
+      object-position: center 58%;
       display: block;
     }
-    /* Smooth sky blend */
+    /* Natural sky blend */
     .photo-sky-blend {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      height: 35px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+      height: 40px;
+      background: linear-gradient(180deg, rgba(238, 247, 254, 0.8) 0%, rgba(238, 247, 254, 0) 100%);
       pointer-events: none;
     }
 
-    /* Bottom White Footer Strip */
+    /* Bottom White Footer Strip (Simplified, clean, zero clutter) */
     .footer-white-strip {
       background: #ffffff;
       border-top: 2px solid #e2e8f0;
-      padding: 14px 42px;
+      padding: 12px 36px 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -223,25 +227,21 @@
     .footer-campus-info {
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 2px;
       max-width: 440px;
     }
     .campus-address-line {
       font-size: 12.5px;
-      font-weight: 900;
+      font-weight: 800;
       color: #000000;
       letter-spacing: 0.2px;
-      line-height: 1.25;
-    }
-    .campus-details-line {
-      font-size: 12px;
-      font-weight: 700;
-      color: #334155;
+      line-height: 1.3;
     }
     .campus-email-line {
       font-size: 12px;
-      font-weight: 800;
-      color: #0f766e;
+      font-weight: 500;
+      color: #1e293b;
+      margin-top: 1px;
     }
 
     .footer-contact-call {
@@ -253,9 +253,9 @@
     }
     .call-label-text {
       font-size: 12px;
-      font-weight: 900;
+      font-weight: 800;
       color: #000000;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
     }
     .call-numbers-text {
@@ -271,25 +271,27 @@
 <body>
 
   <div id="banner-poster">
-    <!-- Fluffy Sky Clouds for Depth -->
-    <div class="cloud" style="width: 320px; height: 180px; top: -40px; left: 40px;"></div>
+    <!-- Natural Fluffy Sky Clouds for Depth -->
+    <div class="cloud" style="width: 320px; height: 180px; top: -30px; left: 40px;"></div>
     <div class="cloud" style="width: 360px; height: 190px; top: 10px; right: -20px;"></div>
-    <div class="cloud" style="width: 300px; height: 160px; top: 120px; left: -60px;"></div>
+    <div class="cloud" style="width: 300px; height: 160px; top: 130px; left: -60px;"></div>
 
-    <!-- Top URL & Affiliation Bar -->
+    <!-- Top URL & Affiliation Bar (Simple & Clean) -->
     <div class="top-strip">
       <div class="url">www.vasundharapublic.in</div>
-      <div class="board">M.P. Board Affiliated &bull; UDISE: 23230413310</div>
+      <div class="board">M.P. Board Affiliation No. : 23230413310</div>
     </div>
 
-    <!-- Centered School Branding & Crest -->
-    <div class="school-branding-center">
-      <div class="logo-crest-wrap">
-        <svg width="82" height="82" viewBox="0 0 100 100" fill="none">
+    <!-- School Branding: Horizontal Logo Lockup (Exact Mount Index structure) -->
+    <div class="brand-lockup-row">
+      <div class="brand-logo-crest">
+        <svg width="92" height="92" viewBox="0 0 100 100" fill="none">
+          <!-- Outer Golden Radiance -->
           <circle cx="50" cy="50" r="48" fill="none" stroke="#eda423" stroke-width="2" opacity="0.9" />
           <circle cx="50" cy="50" r="45" fill="#0b4620" />
           <circle cx="50" cy="50" r="40" fill="#ffffff" />
           
+          <!-- Sun Rays -->
           <g stroke="#eda423" stroke-width="2" stroke-linecap="round" opacity="0.8">
             <line x1="50" y1="11" x2="50" y2="17" />
             <line x1="69" y1="18" x2="64" y2="23" />
@@ -300,6 +302,7 @@
             <line x1="11" y1="50" x2="17" y2="50" />
           </g>
 
+          <!-- Shield -->
           <path
             d="M50 20 C32 20 28 32 28 52 C28 72 50 83 50 83 C50 83 72 72 72 52 C72 32 68 20 50 20 Z"
             fill="#0b4620"
@@ -311,12 +314,14 @@
             stroke-width="1.5"
           />
 
+          <!-- Book of Wisdom -->
           <path
             d="M50 49 C44 44 36 45 33 47 V65 C36 63 44 62 50 66 C56 62 64 63 67 65 V47 C64 45 56 44 50 49 Z"
             fill="#ffffff"
           />
           <line x1="50" y1="49" x2="50" y2="66" stroke="#0b4620" stroke-width="1.5" />
 
+          <!-- Golden Knowledge Torch Flame -->
           <path
             d="M50 28 C53 34 57 37 55 43 C54 45 52 46 50 46 C48 46 46 45 45 43 C43 37 47 34 50 28 Z"
             fill="#eda423"
@@ -328,9 +333,10 @@
         </svg>
       </div>
 
-      <div class="school-title-group">
-        <h2 class="school-title-name">VASUNDHARA PUBLIC SCHOOL</h2>
-        <div class="school-subtitle">PUNJAPURA &bull; DEWAS</div>
+      <div class="brand-name-col">
+        <div class="brand-name-top">VASUNDHARA</div>
+        <div class="brand-name-main">PUBLIC SCHOOL</div>
+        <div class="brand-name-sub">PUNJAPURA &bull; DEWAS</div>
       </div>
     </div>
 
@@ -340,38 +346,38 @@
     <!-- Dotted Divider 1 -->
     <div class="dotted-rule"></div>
 
-    <!-- Eligibility Criteria (Crisp, High-Contrast Black Text) -->
+    <!-- Eligibility Criteria (Bold Title + Regular Weight Body) -->
     <div class="info-section">
       <div class="info-section-title">ELIGIBILITY CRITERIA</div>
       <div class="info-section-body">
-        Pre-Nursery: 2.5+ yrs | Nursery: 3+ yrs | KG: 4+ yrs | Class I: 5+ yrs (as of 31st July)<br>
-        Class II to X: As per M.P. Board Norms (Transfer Certificate &amp; Assessment)
+        Nursery: 3+ years (as of 31st July) | KG: 4+ years (as of 31st July) | Class I: 5+ years (as of 31st July)<br>
+        Class II to X: As per M.P. Board Guidelines
       </div>
     </div>
 
     <!-- Dotted Divider 2 -->
     <div class="dotted-rule"></div>
 
-    <!-- Priority Consideration -->
+    <!-- Priority Consideration (Bold Title + Regular Weight Body) -->
     <div class="info-section">
       <div class="info-section-title">PRIORITY CONSIDERATION</div>
       <div class="info-section-body">
-        Siblings, Relatives of Existing Students, Girl Child &amp; Meritorious Scholars.
+        Siblings, Relatives of Existing Students and Meritorious Scholars.
       </div>
     </div>
 
     <!-- Dotted Divider 3 -->
     <div class="dotted-rule"></div>
 
-    <!-- Clean Centered Scholarship Ribbon (Campus Infra removed to prevent clutter) -->
-    <div class="scholarship-bar">
-      <div class="scholarship-ribbon">
-        <div class="sch-main">UP TO 100% SCHOLARSHIP</div>
-        <div class="sch-sub">for Meritorious Students in Sports &amp; Academics</div>
+    <!-- Middle Strip: Clean Scholarship Badge on the Right (Campus Infra Removed) -->
+    <div class="middle-badges-strip">
+      <div class="scholarship-ribbon-card">
+        <div class="sch-heading">UP TO 100% SCHOLARSHIP</div>
+        <div class="sch-details">for Meritorious Students in Sports &amp; Academics</div>
       </div>
     </div>
 
-    <!-- Real School Campus Photo - Reduced Sky, Centered School Building -->
+    <!-- Real School Campus Photo (Centered Building & Lush Grounds) -->
     <div class="campus-photo-container">
       <div class="photo-sky-blend"></div>
       <img
@@ -381,17 +387,14 @@
       />
     </div>
 
-    <!-- Bottom White Information Strip -->
+    <!-- Bottom White Information Strip (Clean, Simplified, No Clutter) -->
     <div class="footer-white-strip">
       <div class="footer-campus-info">
         <div class="campus-address-line">
-          SCHOOL CAMPUS : MAIN ROAD, PUNJAPURA, TEHSIL BAGLI, DIST. DEWAS (M.P.) - 455227
-        </div>
-        <div class="campus-details-line">
-          UDISE: 23230413310 &bull; Co-Ed Campus (Pre-Nursery to Class X)
+          SCHOOL CAMPUS : MAIN ROAD, PUNJAPURA, TEHSIL BAGLI, DEWAS (M.P.)
         </div>
         <div class="campus-email-line">
-          Email : admissions@vasundharapublic.in &bull; info@vasundharapublic.in
+          Email : admissions@vasundharapublic.in
         </div>
       </div>
 
